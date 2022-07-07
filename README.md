@@ -287,7 +287,7 @@ Role != masyarakat
   }
 ```
 
-#### Pembaruan pengaduan
+#### Post Pembaruan pengaduan
 ##### Success
 ```json
   {
