@@ -154,6 +154,8 @@ Microservices
 ```
 
 #### Change Avatar Masyarakat/Admin/Petugas
+format base64: `"data:image/" . $imageFileType . ";base64," . base64_encode($data)` <br>
+ex: `"data:image/jpeg;base64,/9j/4AAQSkZJRgA....."`
 ```json
   {
     "status": 200,
