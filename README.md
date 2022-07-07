@@ -324,3 +324,314 @@ Role != masyarakat
     "status_code": 200
   }
 ```
+
+#### Get pengaduan by masyarakat
+
+```json
+  [ 
+    {
+        "id": "3b7c7389-215c-43a2-b5c7-c903d65ccf4f",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "DRAINASE RUSAK",
+        "deskripsi": "beton sudah pecah",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-07T09:44:20.000000Z",
+        "updated_at": "2022-07-07T09:44:20.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0
+    },
+    {
+        "id": "7fa15fde-b09d-4149-bfc5-86ed146060c1",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "ON_PROGRESS",
+        "created_at": "2022-07-07T09:43:20.000000Z",
+        "updated_at": "2022-07-07T09:50:29.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0
+    },
+    {
+        "id": "00bce130-8bdf-4bbc-8afc-5c0b562d6787",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-06T05:48:48.000000Z",
+        "updated_at": "2022-07-06T05:48:48.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 1,
+        "downvote": 0
+    }
+  ]
+```
+
+#### Get pengaduan by petugas
+
+```json
+  [
+    {
+        "id": "7fa15fde-b09d-4149-bfc5-86ed146060c1",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "ON_PROGRESS",
+        "feedback_masyarakat": null,
+        "created_at": "2022-07-07T09:43:20.000000Z",
+        "updated_at": "2022-07-07T09:50:29.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0
+    }
+  ]
+```
+
+#### Get menangani by petugas
+
+```json
+  [
+    {
+        "id": "f8079487-6224-4ac2-a487-a021df9aa33a",
+        "id_pengaduan": "7fa15fde-b09d-4149-bfc5-86ed146060c1",
+        "id_petugas": "0f869432-8e61-495b-9a68-1dd4a7137ce8",
+        "nama_petugas": "Joko",
+        "id_admin": "a7451150-bd84-11ec-b1c9-005056c00001",
+        "nama_admin": "admin",
+        "created_at": "2022-07-07T09:50:29.000000Z",
+        "updated_at": "2022-07-07T09:50:29.000000Z"
+    }
+  ]
+```
+
+#### Get pengaduan
+##### sorted up and role == masyarakat
+```json
+  [
+    {
+        "id": "00bce130-8bdf-4bbc-8afc-5c0b562d6787",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-06T05:48:48.000000Z",
+        "updated_at": "2022-07-06T05:48:48.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 1,
+        "downvote": 0,
+        "vote": "UPVOTE"
+    },
+    {
+        "id": "3b7c7389-215c-43a2-b5c7-c903d65ccf4f",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "DRAINASE RUSAK",
+        "deskripsi": "beton sudah pecah",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-07T09:44:20.000000Z",
+        "updated_at": "2022-07-07T09:44:20.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0,
+        "vote": null
+    },
+    {
+        "id": "7fa15fde-b09d-4149-bfc5-86ed146060c1",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "ON_PROGRESS",
+        "created_at": "2022-07-07T09:43:20.000000Z",
+        "updated_at": "2022-07-07T09:50:29.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0,
+        "vote": null
+    }
+]
+```
+##### sorted down and role == masyarakat
+```json
+  [
+    {
+        "id": "3b7c7389-215c-43a2-b5c7-c903d65ccf4f",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "DRAINASE RUSAK",
+        "deskripsi": "beton sudah pecah",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-07T09:44:20.000000Z",
+        "updated_at": "2022-07-07T09:44:20.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0,
+        "vote": null
+    },
+    {
+        "id": "7fa15fde-b09d-4149-bfc5-86ed146060c1",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "ON_PROGRESS",
+        "created_at": "2022-07-07T09:43:20.000000Z",
+        "updated_at": "2022-07-07T09:50:29.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 0,
+        "downvote": 0,
+        "vote": null
+    },
+    {
+        "id": "00bce130-8bdf-4bbc-8afc-5c0b562d6787",
+        "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+        "nama_pelapor": "Deanira",
+        "nama_jalan": "Jalan Sudirman",
+        "foto": "no-picture.png",
+        "tipe": "BANJIR",
+        "deskripsi": "banjir 2 meter",
+        "status": "NOT_YET_VERIFIED",
+        "created_at": "2022-07-06T05:48:48.000000Z",
+        "updated_at": "2022-07-06T05:48:48.000000Z",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+        "upvote": 1,
+        "downvote": 0,
+        "vote": "UPVOTE"
+    }
+]
+```
+
+#### Get pengaduan by status/by tipe/ by tipe and status
+Role masyarakat
+```json
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": "3b7c7389-215c-43a2-b5c7-c903d65ccf4f",
+            "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+            "nama_pelapor": "Deanira",
+            "nama_jalan": "Jalan Sudirman",
+            "foto": "no-picture.png",
+            "tipe": "DRAINASE RUSAK",
+            "deskripsi": "beton sudah pecah",
+            "status": "NOT_YET_VERIFIED",
+            "feedback_masyarakat": null,
+            "created_at": "2022-07-07T09:44:20.000000Z",
+            "updated_at": "2022-07-07T09:44:20.000000Z",
+            "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+            "upvote": 0,
+            "downvote": 0,
+            "vote": null
+        },
+        {
+            "id": "00bce130-8bdf-4bbc-8afc-5c0b562d6787",
+            "id_masyarakat": "a40dd247-4b65-40fa-9a5a-47b75a2592ce",
+            "nama_pelapor": "Deanira",
+            "nama_jalan": "Jalan Sudirman",
+            "foto": "no-picture.png",
+            "tipe": "BANJIR",
+            "deskripsi": "banjir 2 meter",
+            "status": "NOT_YET_VERIFIED",
+            "feedback_masyarakat": null,
+            "created_at": "2022-07-06T05:48:48.000000Z",
+            "updated_at": "2022-07-06T05:48:48.000000Z",
+            "geometry": "{\"type\": \"Point\", \"coordinates\": [101.415468, 0.584255]}",
+            "upvote": 1,
+            "downvote": 0,
+            "vote": "UPVOTE"
+        }
+    ],
+    "first_page_url": "http://localhost:8000/api/pengaduan_by_status/NOT_YET_VERIFIED?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http://localhost:8000/api/pengaduan_by_status/NOT_YET_VERIFIED?page=1",
+    "links": [
+        {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        },
+        {
+            "url": "http://localhost:8000/api/pengaduan_by_status/NOT_YET_VERIFIED?page=1",
+            "label": "1",
+            "active": true
+        },
+        {
+            "url": null,
+            "label": "Next &raquo;",
+            "active": false
+        }
+    ],
+    "next_page_url": null,
+    "path": "http://localhost:8000/api/pengaduan_by_status/NOT_YET_VERIFIED",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 2,
+    "total": 2
+}
+```
+
+#### Update status pengaduan done by petugas
+success
+```json
+{
+    "message": "Congratulations, the report has been done!",
+    "status_code": 200
+}
+```
+forbidden
+```json
+{
+    "message": "You don't have access",
+    "status_code": 403
+}
+```
+
+#### Get drainase
+```json
+{
+    "message": "Congratulations, the report has been done!",
+    "status_code": 200
+}
+```
+
+#### Get titik banjir
+```json
+{
+    "message": "Congratulations, the report has been done!",
+    "status_code": 200
+}
+```
+
+#### Get titik drainase rusak
+```json
+{
+    "message": "Congratulations, the report has been done!",
+    "status_code": 200
+}
+```
