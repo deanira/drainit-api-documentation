@@ -108,7 +108,7 @@ Microservices
         "email": "indah@gmail.com",
         "telepon": "082392074443",
         "alamat": "Jalan Geso",
-        "tanggal_lahir": "0001-01-01 00:00:00 +0000 UTC",
+        "tanggal_lahir": "1975-12-05T00:00:00Z",
         "foto": "https://king-prawn-app-hxran.ondigitalocean.app/avatar/masyarakat/default.png"
     }
   }
