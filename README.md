@@ -616,24 +616,136 @@ forbidden
 
 #### Get drainase
 ```json
-{
-    "message": "Congratulations, the report has been done!",
-    "status_code": 200
-}
+[
+    {
+        "id": "05cc2f5a-b0d0-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Pramuka",
+        "lebar": 0.3,
+        "panjang": 1216,
+        "kedalaman": 0.4,
+        "bahan": "Beton",
+        "kondisi": "BAGUS",
+        "akhir_pembuangan": "Parit Besar",
+        "arah_alir": "kanan ke kiri",
+        "foto": "-",
+        "tipe_drainase": "Buatan",
+        "geometry": "{\"type\": \"LineString\", \"coordinates\": [[101.447969, 0.570624], [101.450033, 0.571408], [101.451251, 0.571523], [101.453153, 0.570869], [101.955003, 0.570639], [101.455417, 0.570935], [101.4556079, 0.571172], [101.457315, 0.573201]]}"
+    },
+    {
+        "id": "05cd4834-b0d0-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Haji m.nur",
+        "lebar": 0.8,
+        "panjang": 1010,
+        "kedalaman": 0.6,
+        "bahan": "Beton",
+        "kondisi": "BAGUS",
+        "akhir_pembuangan": "-",
+        "arah_alir": "Tidak Mengalir",
+        "foto": "-",
+        "tipe_drainase": "Buatan",
+        "geometry": "{\"type\": \"LineString\", \"coordinates\": [[101.540011, 0.563056], [101.453309, 0.563403], [101.454922, 0.563549], [101.455416, 0.563557], [101.455718, 0.564211]]}"
+    },
+    {
+        "id": "0bde578b-b0d3-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Semarang",
+        "lebar": 1,
+        "panjang": 1260,
+        "kedalaman": 0.64,
+        "bahan": " Batu",
+        "kondisi": "BAGUS",
+        "akhir_pembuangan": "-",
+        "arah_alir": "tenang",
+        "foto": "-",
+        "tipe_drainase": "Buatan",
+        "geometry": "{\"type\": \"LineString\", \"coordinates\": [[101.433249, 0.564161], [101.434594, 0.564143], [101.433657, 0.564086], [101.43459, 0.564164]]}"
+    },
+    {
+        "id": "14705a58-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Limbungan / Hidayah 1 (kiri)",
+        "lebar": 0.45,
+        "panjang": 640,
+        "kedalaman": 0.3,
+        "bahan": "batu",
+        "kondisi": "BAGUS",
+        "akhir_pembuangan": "titik kumpul air",
+        "arah_alir": "kering",
+        "foto": "-",
+        "tipe_drainase": "Buatan",
+        "geometry": "{\"type\": \"LineString\", \"coordinates\": [[101.451476, 0.565622], [101.452575, 0.567404], [101.448548, 0.561943], [101.4526554, 0.565519]]}"
+    },
+    {
+        "id": "14719386-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Limbungan / Hidayah 2 (kanan)",
+        "lebar": 0.37,
+        "panjang": 510,
+        "kedalaman": 0.3,
+        "bahan": "batu",
+        "kondisi": "BAGUS",
+        "akhir_pembuangan": "titik kumpul air ",
+        "arah_alir": "kering ",
+        "foto": "-",
+        "tipe_drainase": "Buatan",
+        "geometry": "{\"type\": \"LineString\", \"coordinates\": [[101.451901, 0.565848], [101.452131, 0.565593], [101.452531, 0.565593]]}"
+    },
+]
 ```
 
 #### Get titik banjir
 ```json
-{
-    "message": "Congratulations, the report has been done!",
-    "status_code": 200
-}
+[
+    {
+        "id": "a59b604d-b0d4-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Kemping",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.4732942, 0.5785191]}"
+    },
+    {
+        "id": "e8b642a9-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Harapan",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.4313344, 0.565203]}"
+    },
+    {
+        "id": "e8b925e9-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Harmonis",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.433535, 0.561156]}"
+    }
+]
 ```
 
 #### Get titik drainase rusak
 ```json
-{
-    "message": "Congratulations, the report has been done!",
-    "status_code": 200
-}
+[
+    {
+        "id": "a59b604d-b0d4-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Kemping",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.4732942, 0.5785191]}"
+    },
+    {
+        "id": "e8b642a9-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Harapan",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.4313344, 0.565203]}"
+    },
+    {
+        "id": "e8b925e9-b0d2-11ec-8bf9-005056c00001",
+        "nama_jalan": "Jalan Harmonis",
+        "foto": "-",
+        "keterangan": null,
+        "status": "INACTIVE",
+        "geometry": "{\"type\": \"Point\", \"coordinates\": [101.433535, 0.561156]}"
+    }
+]
 ```
